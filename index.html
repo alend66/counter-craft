@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COUNTER CRAFT | Where Counters Come Alive — Premium Counter Setting All Over Kerala 🌴</title>
+  <meta name="description" content="COUNTER CRAFT — Premium illuminated buffet counters, wedding catering stations, Sugar Qubes dessert bars, and bespoke live food setups. All over Kerala 🌴. Call 82898 50605 / 75109 97587 / 9048365504.">
+  <meta name="keywords" content="Counter Craft, luxury buffet counter Kerala, wedding catering counter Kochi, illuminated event counter Calicut, banquet buffet table Trivandrum, catering furniture Kerala">
+
+  <!-- Google Fonts: Fraunces, Cinzel, DM Sans, Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cinzel:wght@600;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       LIVING SKY (Dawn -> Golden Day -> Royal Sunset -> Banquet Night)
+       ========================================================================== -->
+  <div id="sky"></div>
+  <div id="stars"></div>
+  <div id="sun"></div>
+  <div id="moon"></div>
+  <div id="clouds"><i></i><i></i><i></i></div>
+  <div id="flyers" aria-hidden="true">
+    <div class="bird b1">⌣⌣</div>
+    <div class="bird b2">⌣⌣</div>
+    <div class="bird b3">⌣⌣</div>
+  </div>
+  <div id="flies" aria-hidden="true"></div>
+  <div id="progress"></div>
+
+  <!-- ==========================================================================
+       TOP BAR + HUD ODOMETER + NAVIGATION
+       ========================================================================== -->
+  <header class="top">
+    <a href="#home" class="logo" id="logoLink">
+      <img src="assets/images/counter-craft-logo.png" alt="COUNTER CRAFT Logo" style="height: 52px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.4));">
+      <div>
+        <span style="font-family: var(--font-display); font-weight: 900; color: #1a1204; letter-spacing: 0.05em;">COUNTER<span style="color:#8c6307; font-family: var(--font-script); font-weight: 700; font-size: 1.55rem; margin-left: 4px;">Craft</span></span>
+        <small style="display:block; font-size: 0.58rem; color: #6a4903; letter-spacing: 0.18em; font-family: var(--font-sans); font-weight: 800;">WHERE COUNTERS COME ALIVE</small>
+      </div>
+    </a>
+
+
+    <div class="hud" aria-hidden="true">
+      <span class="hud-stop" id="hud-stop">Kerala Atelier</span>
+      <span class="hud-km"><b id="hud-km">0000</b> km</span>
+      <span class="hud-counter">CRAFT <b id="hud-counter-num">#0582</b></span>
+    </div>
+
+    <div style="display:flex; gap:10px; align-items:center;">
+      <a id="nav-wa" class="callpill wa-pill" href="https://wa.me/918289850605?text=Hello%20COUNTER%20CRAFT%2C%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20counter%20setting%20services%20in%20Kerala." target="_blank" rel="noopener" title="Chat on WhatsApp">
+        <span>💬 WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       THE ROAD & REAL DELIVERY LORRY (Fixed cinematic scene, vehicle moving on scroll)
+       ========================================================================== -->
+  <div class="scene" aria-hidden="true">
+    <!-- Parallax Horizon with Kerala Palaces, Hills & Coconut Palms -->
+    <div class="layer l1" id="l1">
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V110C120 50 220 90 340 100S560 30 700 70 960 130 1060 80 1160 70 1200 110V200Z"/></svg>
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V110C120 50 220 90 340 100S560 30 700 70 960 130 1060 80 1160 70 1200 110V200Z"/></svg>
+    </div>
+    <div class="layer l2" id="l2">
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V130C140 90 260 150 400 120S640 70 780 110 1040 160 1130 120 1180 120 1200 130V200Z"/></svg>
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V130C140 90 260 150 400 120S640 70 780 110 1040 160 1130 120 1180 120 1200 130V200Z"/></svg>
+    </div>
+    <div class="layer l3" id="l3">
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V150C100 120 240 170 380 150S620 120 760 150 1000 180 1100 150 1180 140 1200 150V200Z"/></svg>
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V150C100 120 240 170 380 150S620 120 760 150 1000 180 1100 150 1180 140 1200 150V200Z"/></svg>
+    </div>
+
+    <!-- The Roadway -->
+    <div class="road" id="road"></div>
+
+    <!-- The Real Counter Craft Transporter Lorry -->
+    <div class="lorry real-lorry" id="lorry">
+      <div class="beam" id="beam"></div>
+      <div class="lamp-glow" id="lamp"></div>
+      <div class="road-light" id="roadlight"></div>
+      <div class="puffs"><i></i><i></i><i></i></div>
+      <canvas id="lorryimg" role="img" aria-label="Real COUNTER CRAFT Delivery Lorry"></canvas>
+      <!-- Rotating Wheel Rims (Rear & Front) -->
+      <div class="rim" id="w1" style="left:33.6%;top:79.5%"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#181b1e"/><circle cx="50" cy="50" r="44" fill="#2d3238"/><circle cx="50" cy="50" r="34" fill="#d4af37"/><circle cx="50" cy="50" r="26" fill="#697078"/><g fill="#181b1e"><circle cx="50" cy="50" r="10"/><circle cx="50" cy="32" r="4"/><circle cx="68" cy="50" r="4"/><circle cx="50" cy="68" r="4"/><circle cx="32" cy="50" r="4"/><circle cx="63" cy="37" r="4"/><circle cx="37" cy="63" r="4"/><circle cx="63" cy="63" r="4"/><circle cx="37" cy="37" r="4"/></g></svg></div>
+      <div class="rim" id="w2" style="left:80.6%;top:79.5%"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#181b1e"/><circle cx="50" cy="50" r="44" fill="#2d3238"/><circle cx="50" cy="50" r="34" fill="#d4af37"/><circle cx="50" cy="50" r="26" fill="#697078"/><g fill="#181b1e"><circle cx="50" cy="50" r="10"/><circle cx="50" cy="32" r="4"/><circle cx="68" cy="50" r="4"/><circle cx="50" cy="68" r="4"/><circle cx="32" cy="50" r="4"/><circle cx="63" cy="37" r="4"/><circle cx="37" cy="63" r="4"/><circle cx="63" cy="63" r="4"/><circle cx="37" cy="37" r="4"/></g></svg></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main>
+
+    <!-- 00 DEPARTURE / HERO (PHOTO IN BACKGROUND) -->
+    <section class="stop hero" id="home" data-stop="Kerala Atelier">
+      <div class="hero-content">
+        <div class="hello rv">🌴 Premium Counter Setting · All Over Kerala 🌴</div>
+        <h1 class="rv">Where Counters<br><em>Come Alive.</em></h1>
+        <p class="hero-sub rv">
+          Handcrafted luxury illuminated buffet setups, royal wedding banquet suites, Sugar Qubes dessert bars, and bespoke live gourmet stations delivered across Kerala.
+        </p>
+
+        <div class="cta rv">
+          <a class="btn wa" href="https://wa.me/918289850605?text=Hello%20COUNTER%20CRAFT,%20I%20am%20interested%20in%20your%20premium%20counter%20setting%20services%20in%20Kerala." target="_blank" rel="noopener">💬 WhatsApp Us</a>
+          <a class="btn" href="#gallery">🖼️ Kerala Photo Gallery</a>
+          <a class="btn alt" href="#reserve">🎫 Reserve Counter Pass</a>
+        </div>
+      </div>
+
+      <p class="drive">scroll to travel across Kerala <span>→</span></p>
+    </section>
+
+    <!-- 01 WELCOME POLAROIDS -->
+    <section class="stop board" id="welcome" data-stop="The Atelier">
+      <div class="polas">
+        <figure class="pola p1 rv">
+          <img src="assets/images/counter-grand-hall.jpg" alt="COUNTER CRAFT Grand Hall Royal Buffet Line Installation">
+          <figcaption>our craft · royal banquet hall</figcaption>
+        </figure>
+        <figure class="pola p2 rv">
+          <img src="assets/images/counter-buffet-wide.jpg" alt="COUNTER CRAFT Architectural Ginkgo Buffet Setup">
+          <figcaption>your event · pure elegance</figcaption>
+        </figure>
+      </div>
+
+      <div class="note rv">
+        <span class="sign">Kerala's Premier Counter Atelier</span>
+        <h2>Every grand event deserves a <em>breathtaking focal point.</em></h2>
+        <p>
+          At <strong>COUNTER CRAFT</strong>, we craft ultra-luxury illuminated event counters engineered specifically for destination weddings, luxury resorts, 5-star hotel banquets, and elite catering teams throughout Kerala.
+        </p>
+        <p>
+          From Bekal to Kovalam, Wayanad to Kumarakom—our modular rapid-lock counters arrive on time, assemble in under 15 minutes without tools, and transform your dining spaces into an unforgettable regal spectacle.
+        </p>
+        <p class="hand">— team COUNTER CRAFT 🌴</p>
+      </div>
+    </section>
+
+    <!-- 02 CRAFT SPECIALTIES -->
+    <section class="stop services" id="craft" data-stop="Craft Specialties">
+      <div class="shead rv">
+        <span class="sign">Engineering & Craftsmanship</span>
+        <h2>Built with <em>architectural perfection</em></h2>
+        <p>Four pillars that make Counter Craft the preferred choice across Kerala's finest events.</p>
+      </div>
+
+      <div class="tags">
+        <div class="tagw t1 rv">
+          <div class="tag">
+            <small>CRAFT Nº 01</small>
+            <h3>CNC Laser Fretwork</h3>
+            <p>Intricate geometric lattice cutouts with beveled gold inserts that radiate seamless light.</p>
+            <span>→ COUNTER CRAFT</span>
+          </div>
+        </div>
+
+        <div class="tagw t2 rv">
+          <div class="tag">
+            <small>CRAFT Nº 02</small>
+            <h3>High-CRI Even Glow</h3>
+            <p>Opal dual-layer diffusers with zero visible LED diodes, casting a velvety warm golden radiance.</p>
+            <span>→ COUNTER CRAFT</span>
+          </div>
+        </div>
+
+        <div class="tagw t3 rv">
+          <div class="tag">
+            <small>CRAFT Nº 03</small>
+            <h3>Food-Safe SS-304</h3>
+            <p>Certified stainless worktops and Carrara marble resistant to direct chafing burners and oils.</p>
+            <span>→ COUNTER CRAFT</span>
+          </div>
+        </div>
+
+        <div class="tagw t4 rv">
+          <div class="tag">
+            <small>CRAFT Nº 04</small>
+            <h3>15-Min QuickLock</h3>
+            <p>Tool-free modular drop-pins that link up to 32 feet of counters rapidly in any Kerala hall.</p>
+            <span>→ COUNTER CRAFT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 04 CUSTOMER SATISFACTION MILESTONES -->
+    <section class="stop satisfaction-section" id="satisfaction" data-stop="Client Satisfaction">
+      <div class="shead rv">
+        <span class="sign">Customer Delight & Milestones</span>
+        <h2>Loved by <em>Kerala's finest hosts</em></h2>
+        <p>Proven track record across prestigious weddings, resorts, and gala banquets throughout Kerala.</p>
+      </div>
+
+      <!-- Animated Rolling Odometers Grid -->
+      <div class="metrics-odometer-grid rv">
+        <div class="metric-card">
+          <div class="metric-num count-up" data-target="580" data-suffix="+">0</div>
+          <div class="metric-label">Grand Banquets Elevated</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num count-up" data-target="99" data-suffix=".9%">0</div>
+          <div class="metric-label">Client Satisfaction Rating</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num count-up" data-target="15" data-suffix=" Mins">0</div>
+          <div class="metric-label">Modular Tool-Free Interlock</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num count-up" data-target="150" data-suffix="k+">0</div>
+          <div class="metric-label">Happy Guests Charmed Monthly</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 MASTERPIECE PHOTO GALLERY -->
+    <section class="stop gallery-sec" id="gallery" data-stop="Photo Gallery">
+      <div class="shead rv">
+        <span class="sign">Authentic Event Photographs</span>
+        <h2>The Masterpiece <em>photo gallery</em></h2>
+        <p>Real photographs from our actual banquet installations across Kerala—from destination beach weddings in Kovalam to grand heritage ballrooms in Kochi.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-tabs rv">
+        <button type="button" class="g-tab-btn active" data-filter="all">All Setups (7)</button>
+        <button type="button" class="g-tab-btn" data-filter="buffet">Grand Buffet Lines</button>
+        <button type="button" class="g-tab-btn" data-filter="dessert">Sugar Qubes Desserts</button>
+        <button type="button" class="g-tab-btn" data-filter="live">Live Stations & Islands</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Dynamically rendered by JS with polaroid tape styling -->
+      </div>
+    </section>
+
+    <!-- 05b LIVE INSTAGRAM REELS & POSTCARDS FROM REAL BANQUETS -->
+    <section class="stop cards-sec" id="postcards" data-stop="Live Reels">
+      <div class="shead rv">
+        <span class="sign">Live Moments from Real Banquets</span>
+        <h2>Postcards & reels <em>in motion</em></h2>
+        <p>Watch COUNTER CRAFT illuminated banquet counters and live buffet stations in action at luxury weddings and gala events across Kerala.</p>
+      </div>
+
+      <div class="pcs">
+        <!-- Real Reel 1: DdMFuMxvOoE -->
+        <figure class="pc rv" style="--r:-2.2deg">
+          <span class="tape"></span>
+          <div class="pcf">
+            <iframe id="reel-embed-1" title="COUNTER CRAFT Live Counter Setup Reel 1" src="https://www.instagram.com/reel/DdMFuMxvOoE/embed" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <figcaption>
+            where counters come alive ✦ 
+            <a id="reel-link-1" href="https://www.instagram.com/reel/DdMFuMxvOoE/" target="_blank" rel="noopener">open on Instagram ↗</a>
+          </figcaption>
+        </figure>
+
+        <!-- Real Reel 2: DcWG_ZaP0sj -->
+        <figure class="pc rv" style="--r:2.4deg">
+          <span class="tape"></span>
+          <div class="pcf">
+            <iframe id="reel-embed-2" title="COUNTER CRAFT Royal Banquet Atmosphere Reel 2" src="https://www.instagram.com/reel/DcWG_ZaP0sj/embed" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <figcaption>
+            royal banquet atmosphere ✦ 
+            <a id="reel-link-2" href="https://www.instagram.com/reel/DcWG_ZaP0sj/" target="_blank" rel="noopener">open on Instagram ↗</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 06 ALL OVER KERALA SERVICE COVERAGE -->
+    <section class="stop kerala-sec" id="kerala" data-stop="All Over Kerala">
+      <div class="shead rv">
+        <span class="sign">Pan-Kerala Operational Network</span>
+        <h2>Serving with pride <em>all over Kerala 🌴</em></h2>
+        <p>Our dedicated transport fleet and certified setup crew provide turnkey counter logistics across all 14 districts.</p>
+      </div>
+
+      <div class="board kerala-board rv">
+        <div>
+          <h3 style="font-size:2rem; margin-bottom:14px;">Direct Delivery & Setup to Your Venue</h3>
+          <p style="margin-bottom:18px;">
+            Whether you are hosting a wedding reception at Bolgatty Palace Kochi, a beach gala in Varkala, a luxury convention in Calicut, or a tea estate celebration in Munnar, COUNTER CRAFT brings ready-to-illuminate counters directly to your doorstep.
+          </p>
+          <ul style="list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:10px; font-weight:700; color:var(--dk); margin-bottom:24px;">
+            <li>📍 Ernakulam & Kochi HQ</li>
+            <li>📍 Kozhikode (Calicut)</li>
+            <li>📍 Thiruvananthapuram</li>
+            <li>📍 Thrissur & Guruvayur</li>
+            <li>📍 Kottayam & Kumarakom</li>
+            <li>📍 Kannur & Kasaragod</li>
+            <li>📍 Wayanad & Palakkad</li>
+            <li>📍 Kollam & Alappuzha</li>
+          </ul>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="tel:+918289850605" class="callpill">☎ 82898 50605</a>
+            <a href="tel:+917510997587" class="callpill alt-pill">☎ 75109 97587</a>
+            <a href="tel:+919048365504" class="callpill alt-pill">☎ 90483 65504</a>
+          </div>
+        </div>
+
+        <div>
+          <img src="assets/images/counter-grand-hall.jpg" alt="COUNTER CRAFT Grand Hall Setup Kerala" class="kerala-img">
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- 07 NIGHT STOP / COUNTER CRAFT RESERVATION PASS -->
+    <section class="stop reserve" id="reserve" data-stop="Night Stop">
+      <div class="shead rv">
+        <span class="sign">Stop 07 · Direct Reservation</span>
+        <h2>Reserve your counter <em>under the stars</em></h2>
+        <p>Instant booking confirmation direct to our Kerala dispatch desk on WhatsApp.</p>
+      </div>
+
+      <form id="booking-form" class="pass formpass rv">
+        <div class="pl formgrid">
+          <small>COUNTER CRAFT · RESERVATION</small>
+          <label>
+            Host / Caterer
+            <input id="b-name" placeholder="Your name" required>
+          </label>
+          <label>
+            Destination
+            <input id="b-place" placeholder="Destination (e.g. Kochi, Calicut, Trivandrum)" required>
+          </label>
+          <label>
+            Date
+            <input id="b-date" type="date" required>
+          </label>
+          <label>
+            Counter Setup
+            <select id="b-seat">
+              <option value="The Imperial 32ft Royal Buffet Suite">The Imperial 32ft Royal Buffet Suite</option>
+              <option value="Sugar Qubes Signature Luxury Dessert Bar">Sugar Qubes Signature Luxury Dessert Bar</option>
+              <option value="Royal Chafer Station Suite with Roll-Tops">Royal Chafer Station Suite with Roll-Tops</option>
+              <option value="Heritage Arc-Lamp Live Gourmet Counter">Heritage Arc-Lamp Live Gourmet Counter</option>
+              <option value="Imperial 4-Module Island Station">Imperial 4-Module Island Station</option>
+              <option value="Custom Banquet Counter Specification">Custom Banquet Counter Specification</option>
+            </select>
+          </label>
+        </div>
+        <div class="ps">
+          <small>CONFIRM</small>
+          <div class="bar"></div>
+          <button id="b-submit" class="btn" type="submit">Send on WhatsApp</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- 08 THE SIGN / JOURNEY'S END -->
+    <section class="stop final" id="contact" data-stop="Journey's End">
+      <div class="open rv">OPEN 24×7</div>
+      <a id="contact-neon" class="neon rv" href="https://wa.me/918289850605" target="_blank" rel="noopener">COUNTER CRAFT</a>
+      <p class="rv">Where Counters Come Alive · All Over Kerala 🌴</p>
+      <div class="cta rv">
+        <a id="contact-wa" class="btn wa" href="https://wa.me/918289850605?text=Hello%20COUNTER%20CRAFT%2C%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20counter%20setting%20services%20in%20Kerala." target="_blank" rel="noopener">💬 WhatsApp Us Direct</a>
+        <a id="contact-ig" class="btn alt" href="https://www.instagram.com/reel/DdMFuMxvOoE/" target="_blank" rel="noopener">🎥 Live Banquet Reels</a>
+      </div>
+      <small class="copy">© 2026 COUNTER CRAFT — Where Counters Come Alive All Over Kerala.</small>
+    </section>
+
+  </main>
+
+  <!-- Floating WhatsApp Redirect Button (Harikz Style) -->
+  <a id="float-wa" class="fwa" href="https://wa.me/918289850605?text=Hello%20COUNTER%20CRAFT%2C%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20counter%20setting%20services%20in%20Kerala." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+  <!-- ==========================================================================
+       FULLSCREEN LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close Lightbox">✕</button>
+      <button class="lightbox-nav-btn lightbox-prev" onclick="prevLightbox()" aria-label="Previous Photo">‹</button>
+      <button class="lightbox-nav-btn lightbox-next" onclick="nextLightbox()" aria-label="Next Photo">›</button>
+
+      <div class="lightbox-media">
+        <img id="lightboxImg" src="" alt="Full view counter image">
+      </div>
+
+      <div class="lightbox-details">
+        <span id="lightboxModel" style="font: 700 0.8rem monospace; color: var(--gold-400); display: block; margin-bottom: 6px;"></span>
+        <h3 id="lightboxTitle" style="font-size: 1.8rem; margin-bottom: 10px; color: #ffffff;"></h3>
+        <p id="lightboxDesc" style="color: #cbd5e1; font-size: 1rem; line-height: 1.6; margin-bottom: 14px;"></p>
+        <div id="lightboxSpecs" style="background: rgba(255,255,255,0.08); padding: 8px 14px; border-radius: 6px; font-size: 0.85rem; color: #ffd976; margin-bottom: 20px; display: inline-block;"></div>
+        
+        <div>
+          <a href="#" target="_blank" rel="noopener" class="btn wa" id="lightboxWaBtn">
+            <span>Inquire This Model on WhatsApp →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer-wrap">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+          <img src="assets/images/counter-craft-logo.png" alt="COUNTER CRAFT" style="height:48px; width:auto; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
+          <div>
+            <h4 style="font-size:1.6rem; color:#d4af37; margin:0;">COUNTER <span style="color:#ffffff; font-family:var(--font-script);">Craft</span></h4>
+            <small style="color:#ffe494; letter-spacing:0.18em;">WHERE COUNTERS COME ALIVE</small>
+          </div>
+        </div>
+        <p>
+          Kerala's premier manufacturer and turnkey provider of luxury illuminated banquet buffet counters, live food stations, Sugar Qubes dessert bars, and bespoke event architecture.
+        </p>
+        <p style="margin-top:12px; color:var(--gold-400); font-weight:700;">
+          🌴 Premium Counter Setting — All Over Kerala 🌴
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Direct Contact</h4>
+        <p>
+          <strong style="color:#fff;">Hotline 1:</strong> <a href="tel:+918289850605" style="color:#ffd46b;">+91 82898 50605</a><br>
+          <strong style="color:#fff;">Hotline 2:</strong> <a href="tel:+917510997587" style="color:#ffd46b;">+91 75109 97587</a><br>
+          <strong style="color:#fff;">Hotline 3:</strong> <a href="tel:+919048365504" style="color:#ffd46b;">+91 90483 65504</a><br>
+          <strong style="color:#fff;">WhatsApp:</strong> <a href="https://wa.me/918289850605" target="_blank" rel="noopener" style="color:#25d366;">Chat Directly 24x7</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kerala Network</h4>
+        <p>
+          Kochi • Kozhikode • Trivandrum • Thrissur • Kottayam • Kannur • Wayanad • Kollam • Palakkad • Alappuzha • Malappuram • Idukki • Kasaragod
+        </p>
+        <p style="margin-top:16px; font-size:0.8rem; color:#7e756c;">
+          © 2026 COUNTER CRAFT. All Rights Reserved. Where Counters Come Alive.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
