@@ -7,7 +7,7 @@
 ---
 
 ## ✨ Features
-🌐 **Live Deployment**: [portifolio](https://counter-craft.vercel.app/)  
+🌐 **Live Deployment**: [counter craft](https://counter-craft.vercel.app/)  
 - **Illuminated Luxury Setups:** Backlit warm translucent onyx and golden jali fretwork counters.
 - **Pure Architectural Elegance:** Clean, flower-free luxury catering presentation with food-grade SS-304 chafers, brass tureens, and warm heat lamps.
 - **15-Minute Modular QuickLock:** Tool-free rapid assembly and dismantling across Kerala destination wedding venues.
